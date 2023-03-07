@@ -10,64 +10,102 @@
 <body>
     <form>
         <!--User ID-->
-        <label for="UserID">User ID: </label>
-        <input name="UserID" minlength="5" max="12" required> 
+        <label for="UserID">User ID: 
+            <input id="UserID" name="UserID" minlength="5" max="12" required>
+        </label>
+         
         <br>
 
         <!--Password-->
-        <label for="Password">Password: </label>
-        <input name="Password" type="password" minlength="7" maxlength="12" required>
+        <label for="Password">Password: 
+            <input id="Password" name="Password" type="password" minlength="7" maxlength="12" required>
+        </label>
+        
         <br>
 
         <!--Name-->
-        <label for="Name">Name: </label>
-        <input id="Name" type="text" required>
+        <label for="Name">Name: 
+            <input id="Name" type="text" name="Name" required>
+        </label>
+        
         <br>
 
         <!--Address-->
-        <label for="Address">Address: </label>
-        <input name="Address">
+        <label for="Address">Address: 
+            <input id="Address" name="Address">
+        </label>
+        
         <br>
 
         <!--Country-->
-        <label for="Country">Country: </label>
-        <select name="Country" required>
-            <option label="South Africa">
+        <label for="Country">Country: 
+            <select id="Country" name="Country" required >
+                <option label="----"></option>
+                <option label="South Africa"></option>
+                <option label="Denmark"></option>
+                <option label="Canada"></option>
+            </select>
+        </label>
+        
         <br>
 
         <!--ZIP Code-->
-        <label for="Zip">ZIP Code: </label>
-        <input name="Zip" type="number" required>
+        <label for="Zip">ZIP Code: 
+            <input id="Zip" name="Zip" type="number" required>
+        </label>
+        
         <br>
 
         <!--Email-->
-        <label for="Email">Email: </label>
-        <input name="Email" type="email" required>
+        <label for="Email">Email: 
+            <input id="Email" name="Email" type="email" required>
+        </label>
+        
         <br>
 
         <!--Sex-->
-        <label for="Sex">Sex: </label>
-        <label for="Male">Male </label>
-        <input name="Male" type="radio" required>
-        <label for="Female">Female</label>
-        <input name="Female" type="radio">
+        <div>
+            <label for="Sex">Sex: </label>
+                <br>
+                <label for="Male">Male 
+                    <input id="Male" name="Male" type="radio" required>
+                </label>
+                <label for="Female">Female
+                    <input id="Male" name="Female" type="radio">
+                </label>
+        </div>
+
+        
+
         <br>
 
         <!--Language-->
-        <label>Language: </label>
-        <label for="English">English</label>
-        <input name="English" type="checkbox" required>
-        <label for="NonEnglish">Non English</label>
-        <input name="NonEnglish" type="checkbox">
+        <div requi>
+            <label>Language: </label>
+            <br>
+            <label for="English">English 
+                <input id="English" name="English" type="checkbox">
+            </label>
+            
+            <label for="NonEnglish">Non English 
+                <input id="NonEnglish" name="NonEnglish" type="checkbox">
+            </label>
+        </div>
+        
+
         <br>
 
         <!--About-->
-        <label for="About">About: </label>
-        <textarea name="About" col="50" rows="4">
+        <label for="About">About: 
+            <textarea id="About" name="About" col="50" rows="4"></textarea>
+        </label>
+
         <br>
 
         <!--Submit-->
-        <input type="submit">
+        <div id="button">
+            <input id="Submit" type="submit">
+        </div>
     </form>
 </body>
 </html>
