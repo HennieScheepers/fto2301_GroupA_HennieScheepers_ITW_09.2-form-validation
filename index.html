@@ -9,43 +9,64 @@
 </head>
 <body>
     <form>
+        <!--User ID-->
         <label for="UserID">User ID: </label>
         <input name="UserID" minlength="5" max="12" required> 
         <br>
+
+        <!--Password-->
         <label for="Password">Password: </label>
         <input name="Password" type="password" minlength="7" maxlength="12" required>
         <br>
+
+        <!--Name-->
         <label for="Name">Name: </label>
         <input id="Name" type="text" required>
         <br>
+
+        <!--Address-->
         <label for="Address">Address: </label>
         <input name="Address">
         <br>
+
+        <!--Country-->
         <label for="Country">Country: </label>
         <select name="Country" required>
             <option label="South Africa">
         <br>
+
+        <!--ZIP Code-->
         <label for="Zip">ZIP Code: </label>
         <input name="Zip" type="number" required>
         <br>
+
+        <!--Email-->
         <label for="Email">Email: </label>
         <input name="Email" type="email" required>
         <br>
+
+        <!--Sex-->
         <label for="Sex">Sex: </label>
         <label for="Male">Male </label>
         <input name="Male" type="radio" required>
         <label for="Female">Female</label>
         <input name="Female" type="radio">
         <br>
+
+        <!--Language-->
         <label>Language: </label>
         <label for="English">English</label>
         <input name="English" type="checkbox" required>
         <label for="NonEnglish">Non English</label>
         <input name="NonEnglish" type="checkbox">
         <br>
+
+        <!--About-->
         <label for="About">About: </label>
         <textarea name="About" col="50" rows="4">
         <br>
+
+        <!--Submit-->
         <input type="submit">
     </form>
 </body>
